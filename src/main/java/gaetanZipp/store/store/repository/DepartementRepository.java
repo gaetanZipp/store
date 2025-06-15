@@ -8,5 +8,5 @@ import java.util.UUID;
 
 @Repository
 public interface DepartementRepository extends JpaRepository<Departement, UUID> {
-    boolean existingDistinctByLibelleDepartement(String libelleDepartement);
+    boolean existsDistinctByLibelleDepartement(String libelleDepartement);
 }
